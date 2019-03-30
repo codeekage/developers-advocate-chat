@@ -32,7 +32,7 @@ export const addChats = functions.https.onRequest(async (
 })
 
 //create an http [GET] request
-export const getRooms = functions.https.onRequest(async (request, response) => {
+export const getChats = functions.https.onRequest(async (request, response) => {
   try {
     const result = new Array()
     const getChatMessages = await db
